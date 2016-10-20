@@ -424,16 +424,24 @@ div.desc {
   font-size: 20px;
 }
 
+/*
 .iconbar {
   width: 100%;
   margin: 0 auto;
   text-align: center;
 }
+*/
 
 .copyright {
   margin-top: 40px;
   margin-bottom: 100px;
 }
+
+.iconbar a {
+  text-decoration: none;
+  color:inherit;
+}
+
 
 /*--------------------------------*/
 

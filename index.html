@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wesley's Profile</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  
+				<script src="myScript.js"></script>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  
+<!-- contact icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    
+  
+<!-- Hear bar icon-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
+
+</head>
+<body>
+  
+  <ul class="topnav" id="myTopnav">
+    <li><a class="active">Wesley's Profile</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    <li class="icon">
+      <a href="javascript:void(0);" style="font-size:15px;" onclick="dropDown()">☰</a>
+    </li>
+  </ul>
+  
+    <div class="parallax">
+        <div class="firstContent" id="top">
+            <h1 class="fadeIn">.Developer/</h1>
+            <p class="fadeIn">Code for life.</p>
+            <br>
+            <br>
+            <div class="myface fadeIn"></div>
+        </div>
+    </div>
+
+      
+    <div class="aboutme" id="aboutme">
+          
+            <h1>About Me</h1>
+          
+            <p>Welcome to me profile. I am Chung Hin Tsang and you can call me Wesley! A 2nd year student in a 4 year Master of Computer Science at King's College London.</p>
+          
+
+            <ul>
+            <li class="scroll slideLeft">Master’s student in Computer Science offering an outstanding academic background</li>
+            <li class="scroll slideLeft">Live and breathe computing and software development</li>
+            <li class="scroll slideLeft">Advanced problem solving skills mixed with dogged determination to resolve issues</li>
+            <li class="scroll slideLeft">Logical, methodical approach which doesn’t hinder my ability to think laterally when needed</li>
+            <li class="scroll slideLeft">Confident communicator who enjoys working with like-minded individuals</li>
+            <li class="scroll slideLeft">Extremely persistent with a commitment to getting it right</li>
+            <li class="scroll slideLeft">Looking to secure a rewarding and challenging software development internship role</li> 
+            </ul>
+
+            <button class="button">RESUME</button>
+
+    </div>
+      
+  
+    <div class="edu" id="edu">
+      <div class = education>
+      <h1>Education</h1>
+        
+      <div class="school">
+        <p><strong>King’s College London </strong> (~Current)</p>
+        <p style="font-size: 20px;">Master’s Degree in Computer Science. Modules including: JAVA, C++, Computer Systems, AI, Database and Elementary Logic etc.</p>
+      </div>
+      
+      <div class="school">
+      <p><strong>St John’s College</strong> (~2015)</p>
+      <p style="font-size: 20px;">A-Levels in Mathematics (<strong>A*</strong>), Further Mathematics (<strong>A</strong>), Chinese (<strong>A</strong>)</p>
+      </div>
+      
+      </div>
+      
+      <div class = skills>
+    
+      <h1>Skills</h1>
+      
+      <p>Programming Lang: JAVA C++ Python</p>
+      <p>Web Design: HTML CSS JS</p>
+      <p>App: Andriod Ionic</p>
+      <p>Planning Lang: PDDL</p>
+      <p>Database: MySQL</p>
+      <p>Tools: Git Linux SublimeText Eclipse VisualStudio Bracket</p>
+      <p>Normal Lang: English Cantonese Mandrain Japanese</p>
+      
+      </div>  
+      
+    
+    </div>
+  
+  
+    <div class="exp" id="exp">
+      <h1>Keep Calm And Gain Experience</h1>
+      <div class="expBlock">
+        <h2>Jul-Aug 2014: CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED (INTERNSHIPS)</h2>
+        <p>Played a key role within a busy IT department, independently managing and resolving issues</p>
+      </div>
+      <div class="expBlock">
+        <h2>2013-2016: PERSONAL TUTOR – Hong Kong</h2>
+        <p>Delivering engaging lessons and varied support to secondary school students from year 8-11 in subject areas including: mathematics, physics, chemistry and biology</p>
+      </div>
+    </div>
+  
+  
+    <div class="project" id="project">
+      <h1>Lastest Project</h1>     
+      <div class="project-inner">
+        
+        <div class="responsive">
+          <div class="img tooltip">
+            <span class="tooltiptext">Details up coming soon!</span>
+            <a target="_blank">
+              <img src="images/project1.png" alt="SharkTracker" width="300" height="200">
+            </a>
+            <div class="desc">Shark Tracker</div>
+          </div>
+        </div>
+        
+        <div class="responsive">
+          <div class="img tooltip">
+            <span class="tooltiptext">Details up coming soon!</span>
+            <a target="_blank">
+              <img src="images/sample.jpg" alt="SharkTracker" width="300" height="200">
+            </a>
+            <div class="desc">Educational game</div>
+          </div>
+        </div>    
+        
+      </div>
+    </div>
+
+  
+    <div class="contact" id="contact">
+    
+      <div class="message">
+      <h1>Contact me today</h1>
+      <p>Please feel free to contact me even if you are just sending me a friendly hello.</p>
+      </div>
+      
+      <div class="iconbar"> 
+        <div class="myinfo">
+          <a target="_blank" href="https://www.facebook.com/tsangchunghin">
+          <i class="icon-social-facebook"></i>
+          </a>
+        </div>
+
+        <div class="myinfo">
+          <a target="_blank" href="https://uk.linkedin.com/in/wesleytsang">
+          <i class="icon-social-linkedin"></i>
+          </a>
+        </div>
+
+        <div class="myinfo">
+          <a target="_blank" href="mailto:tsangchunghin@hotmail.com?Subject=Hello%20again">
+          <i class="icon-envelope"></i>
+          </a>
+        </div>
+        
+      </div>
+      
+      <div class="copyright">
+          <p>Copyright from <a href="https://uk.linkedin.com/in/wesleytsang">Wesley</a> 2016</p>
+      </div>
+      
+    </div>
+
+  
+</body>
+</html>

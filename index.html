@@ -2,57 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wesley's Profile</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
   
-				<script src="myScript.js"></script>
+    <title>Wesley's Profile</title>
+  
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
+<!--  import jquery-->
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   
+<!--  import chart.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
   
 <!-- contact icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
     
-  
 <!-- Hear bar icon-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-    <script>
-      $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
-      });
-    </script>
-
+      
 </head>
 <body>
   
   <ul class="topnav" id="myTopnav">
-    <li class="active"><a>Wesley's Profile</a></li>
-    <li><a href="#top">Top</a></li>
-    <li><a href="#aboutme">About Me</a></li>
-    <li><a href="#edu">Education & Skills</a></li>
-    <li><a href="#exp">Experience</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li class="active"><a href="http://wesleytsang.github.io">Wesley's Profile</a></li>
+    <li><a href="#top" onclick="dropDown()">Top</a></li>
+    <li><a href="#aboutme" onclick="dropDown()">About Me</a></li>
+    <li><a href="#edu" onclick="dropDown()">Education & Skills</a></li>
+    <li><a href="#exp" onclick="dropDown()">Experience</a></li>
+    <li><a href="#contact" onclick="dropDown()">Contact</a></li>
     <li class="icon">
       <a href="javascript:void(0);" style="font-size:15px;" onclick="dropDown()">☰</a>
     </li>
@@ -84,7 +60,7 @@
       
   
     <div class="edu" id="edu">
-      <div class = education>
+      <div class ="education fadeIn">
       <h1>Education</h1>
       <hr>
         
@@ -102,26 +78,26 @@
       
       <div class = skills>
     
-      <h1>Skills</h1>
+        <h1>Skills</h1>
         
-      <hr>
+        <hr>
       
-      <p>Programming Lang: JAVA C++ Python</p>
-      <p>Web Design: HTML CSS JS</p>
-      <p>App: Andriod Ionic</p>
-      <p>Planning Lang: PDDL</p>
-      <p>Database: MySQL</p>
-      <p>Tools: Git Linux SublimeText Eclipse VisualStudio Bracket</p>
-      <p>Normal Lang: English Cantonese Mandrain Japanese</p>
-      
-      </div>  
+        <p>Programming Lang: JAVA C++ Python</p>
+        <p>Web Design: HTML CSS JS</p>
+        <p>App: Andriod Ionic</p>
+        <p>Planning Lang: PDDL</p>
+        <p>Database: MySQL</p>
+        <p>Tools: Git Linux SublimeText Eclipse VisualStudio Bracket</p>
+        <p>Normal Lang: English Cantonese Mandrain Japanese</p> 
       
 <!--  ----------------testing---------------->
-      
-      
-      
+        
+<!--        <canvas id="myChart" height="300" width="500"></canvas>-->
+
 <!------------------------------------------->
-      
+        
+        </div>
+
     
     </div>
   
@@ -141,7 +117,7 @@
   
   
     <div class="project" id="project">
-      <h1>My Work</h1>   
+      <h1>PORTFOLIO</h1>   
       <hr>
       <div class="project-inner">
         
@@ -205,5 +181,6 @@
     </div>
 
   
+    <script src="js/myScript.js"></script>
 </body>
 </html>

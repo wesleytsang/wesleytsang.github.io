@@ -1,0 +1,322 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
+
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr {
+  margin-top: -5px;
+  margin-bottom: 20px;
+  width: 70px;
+  opacity: 0.6;
+}
+
+/*-----------------------------------------------*/
+
+/*---------Headbar-----------*/
+
+ul.topnav {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 10000;
+  width: 100%;
+  top: 0;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: #555;}
+
+ul.topnav li.icon {display: none;}
+
+/*---------------------------*/
+
+/*----------content----------*/
+
+.content {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+  text-align: center;
+  top: 30px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+}
+
+.img {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+
+/*---------------------------*/
+
+/*-----------FadeIn-------------*/
+
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+/*------------------------------*/
+
+.slideLeft{
+	animation-name: slideLeft;
+	-webkit-animation-name: slideLeft;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes slideLeft {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slideLeft {
+	0% {
+		-webkit-transform: translateX(150%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+
+/*--------------------------------*/
+
+/*-----------Contact--------------*/
+
+.contact {
+  display: inline-block;
+  width: 100%;
+  min-height: 70%;
+  background-image: url(/images/background2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.message {
+  display: block;
+  margin: auto;
+  width: auto;
+  min-height: 50px;
+  margin-top: 4%
+}
+
+.message h1 {
+  text-align: center;
+  font-size: 42px;
+}
+
+.message p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.copyright {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.iconbar a {
+  text-decoration: none;
+  color:inherit;
+}
+
+.icon-social-facebook {
+  font-size: 90px;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: rgba(139, 139, 139, 0.21);
+  border: 3px solid #696969;
+}
+
+.icon-social-linkedin {
+  font-size: 90px;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: rgba(139, 139, 139, 0.21);
+  border: 3px solid #696969;
+}
+
+.icon-envelope {
+  font-size: 90px;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: rgba(139, 139, 139, 0.21);
+  border: 3px solid #696969;
+}
+
+/*--------------------------------*/
+
+.button {
+    background-color: rgba(225, 225, 225, 0);
+    border: 2px solid rgba(41, 41, 41, 0.46);
+    color: #656565;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 3px 6px 0 rgba(0,0,0,0.19);
+    display:block;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.button:hover {
+    background-color: rgba(0, 0, 0, 0.16);
+    border-color: #a2a2a2;
+}
+
+.button:active {
+  background-color: rgba(121, 121, 121, 0.29);
+  box-shadow: 0 5px #8b8b8b;
+  transform: translateY(1px);
+}
+
+/*-----------Title bounce------------*/
+
+.bounce{
+	animation-name: bounce;
+	-webkit-animation-name: bounce;	
+
+	animation-duration: 1.6s;	
+	-webkit-animation-duration: 1.6s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+	
+	transform-origin: 80% 100%;
+	-ms-transform-origin: 80% 100%;
+	-webkit-transform-origin: 50% 100%; 	
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0%) scaleY(0.6);
+	}
+	60%{
+		transform: translateY(-50%) scaleY(1.1);
+	}
+	70%{
+		transform: translateY(0%) scaleY(0.95);
+	}
+	80%{
+		transform: translateY(0%) scaleY(1.05);
+	}	
+	90%{
+		transform: translateY(0%) scaleY(0.95);
+	}				
+	100%{
+		transform: translateY(0%) scaleY(1);
+	}	
+}
+
+@-webkit-keyframes bounce {
+	0% {
+		-webkit-transform: translateY(0%) scaleY(0.6);
+	}
+	60%{
+		-webkit-transform: translateY(-50%) scaleY(1.1);
+	}
+	70%{
+		-webkit-transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+	}
+	80%{
+		-webkit-transform: translateY(0%) scaleY(1.05);
+	}	
+	90%{
+		-webkit-transform: translateY(0%) scaleY(0.95);
+	}				
+	100%{
+		-webkit-transform: translateY(0%) scaleY(1);
+	}		
+}
+
+/*-------------------------------*/
+
+/*----------------Responsive-------------------*/

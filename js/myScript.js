@@ -39,7 +39,26 @@ $(document).ready(function(){
       });
 
 const ctx = document.getElementById("myChart");
-var myChart = new Chart(ctx, {
+
+var eduInView = false;
+var chartInView = false;
+
+function isScrolledIntoView(elem) {
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height() * 0.8;
+
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+
+    return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+}
+      
+//chart srcoll event
+$(window).scroll(function() {
+    if (isScrolledIntoView('#myChart')) {
+        if (chartInView) { return; }
+        chartInView = true;
+        var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ["Programing", "Web Design", "Unique Idea", "Team Player", "Quick Learner"],
@@ -84,6 +103,20 @@ var myChart = new Chart(ctx, {
     }
     }
 });
+    }
+  
+    if (isScrolledIntoView('#education')) {
+        if (eduInView) { return; }
+        eduInView = true;
+        $('#education').removeClass('hide');
+        $('#education').addClass('fadeIn show'); 
+    }
+});
+
+
+
+
+
 
 //----------------------------------------
 

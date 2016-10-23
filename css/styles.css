@@ -189,12 +189,15 @@ ul.topnav li.icon {display: none;}
   color: #585858;
 }
 
+
+
 .chart {
   width: 600px;
   margin: auto;
   padding-bottom: 100px;
   padding-top: 30px;
   padding-right: 4%;
+  overflow-x: hidden;
 }
 
 /*--------------------------------*/
@@ -480,21 +483,12 @@ ul.topnav li.icon {display: none;}
   }
 }
 
-@media screen and (max-width:442px) {
-
-}
-
-@media screen and (max-width:410px) {
-  .chart {
-    width: 400px;
-  }
-}
-
 @media screen and (max-width:410px) {
   .firstContent h1 {
     font-size: 40px;
   }
   .chart {
-    width: 310px;
+    width: 95%;
+    padding-bottom: 50px;
   }
 }

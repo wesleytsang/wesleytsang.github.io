@@ -70,7 +70,35 @@ ul.topnav li.icon {display: none;}
 }
 
 .content h2 {
-  font-size: 30px;
+  font-size: 25px;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 200px;
+    margin: auto;
+}
+
+.detail {
+    display: inline-block;
+    width: 40%;
+    height: 200px;
+    margin: 1%;
+}
+
+.role-item--top {
+  align-self: flex-start;
+}
+
+.role-item--bottom {
+  align-self: flex-end;
+}
+
+.role h1 {
+  font-size: 20px;
 }
 
 .img {

@@ -90,6 +90,22 @@ ul.topnav li.icon {display: none;}
   font-size: 20px;
 }
 
+.description {
+  width: 90%;
+  margin: auto;
+}
+
+.description ul {
+  width: 90%;
+  margin: auto;
+}
+
+.description li {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
 .img {
   width: 60%;
   display: block;

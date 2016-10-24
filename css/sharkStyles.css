@@ -74,27 +74,16 @@ ul.topnav li.icon {display: none;}
 }
 
 .role {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     width: 80%;
-    height: 200px;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .detail {
-    display: inline-block;
-    width: 40%;
-    height: 200px;
-    margin: 1%;
-}
-
-.role-item--top {
-  align-self: flex-start;
-}
-
-.role-item--bottom {
-  align-self: flex-end;
+    display: block;
+    width: 100%;
+    margin: auto;
 }
 
 .role h1 {

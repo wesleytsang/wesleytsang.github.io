@@ -289,6 +289,20 @@ ul.topnav li.icon {display: none;}
     transition-delay: initial;
 }
 
+.addds {
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 250px;
+    background-image: url(/images/project2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
 .projectDetails {
     display: inline-block;
     position: absolute;
@@ -309,7 +323,7 @@ ul.topnav li.icon {display: none;}
 
 .projectDetails h1 {
     font-size: 30px;
-    color: #545454;
+    color: #222222;
 }
 
 .projectBox:hover {

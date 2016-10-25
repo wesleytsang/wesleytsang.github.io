@@ -6,6 +6,12 @@ body, html {
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
 .parallax {
     /* The image used */
     background-image: url(/images/background1.jpg);

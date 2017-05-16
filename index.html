@@ -34,18 +34,20 @@
 <body>
 
 <!--  Navbar  -->
+    <header>
     <ul class="topnav" id="myTopnav">
     <li class="active"><a class="logoText" href="http://wesleytsang.github.io">Wesley's Profile</a></li>
     <li><a href="#top" onclick="dropDown()">Top</a></li>
-    <li><a href="#aboutme" onclick="dropDown()">About Me</a></li>
-    <li><a href="#edu" onclick="dropDown()">Education	&amp; Skills</a></li>
-    <li><a href="#exp" onclick="dropDown()">Experience</a></li>
     <li><a href="#project" onclick="dropDown()">Project</a></li>
+    <li><a href="#aboutme" onclick="dropDown()">About Me</a></li>
+    <li><a href="#edu" onclick="dropDown()">Education</a></li>
+    <li><a href="#exp" onclick="dropDown()">Experience</a></li>
     <li><a href="#contact" onclick="dropDown()">Contact</a></li>
     <li class="icon">
       <a href="javascript:void(0);" style="font-size:15px;" onclick="dropDown()">☰</a>
     </li>
     </ul>
+    </header>
 
     <div class="trailer" id="top">
         <div class="layer">
@@ -61,7 +63,7 @@
 
 
 
-        <div class="container" id="project">
+        <section class="container" id="project">
 
             <h2 class="icon-rocket titleIcon"></h2>
 
@@ -86,9 +88,9 @@
                 <h2>Polylingual</h2>
             </div>
 
-        </div>
+        </section>
 
-        <div class="container" id="aboutme">
+        <section class="container" id="aboutme">
 
             <h2 class="icon-user titleIcon"></h2>
             <p>I born in Hong Kong and now I am a 2nd year student in a 4 year Master of Computer Science at King's College London.</p>
@@ -107,9 +109,9 @@
                 <canvas id="myChart"></canvas>
             </div>
 
-        </div>
+        </section>
 
-        <div class="container" id="edu">
+        <section class="container" id="edu">
 
             <h2 class="icon-graduation titleIcon"></h2>
 
@@ -132,9 +134,9 @@
                 <p>~2015</p>
             </div>
 
-        </div>
+        </section>
 
-        <div class="container" id="exp" style="margin-bottom:200px;">
+        <section class="container" id="exp" style="margin-bottom:200px;">
 
             <h2 class="icon-briefcase titleIcon"></h2>
             <div>
@@ -147,9 +149,9 @@
                 <p>Delivering engaging lessons and varied support to secondary school students from year 8-11 in subject areas including: mathematics, physics, chemistry and biology</p>
             </div>
 
-        </div>
+        </section>
 
-        <div class="container contact" id="contact">
+        <footer class="container contact" id="contact">
 
             <h2>Contact Me Today!</h2>
             <p>Feel free to contact me even if you are just sending me a friendly hello.</p>
@@ -176,7 +178,7 @@
                 <p>Powered by <a href="https://uk.linkedin.com/in/wesleytsang">Wesley</a> 2016</p>
             </div>
 
-        </div>
+        </footer>
 
     </div>
 

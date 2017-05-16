@@ -226,7 +226,7 @@ ul.topnav li a.logoText {
 
 /*---------------------------------------------*/
 
-/*-------------------SharkPage-----------------*/
+/*-------------------ProjectPage----------------*/
 
 .sharkTrackerPage img {
     width: 60%;
@@ -234,7 +234,8 @@ ul.topnav li a.logoText {
     margin: 20px auto;
 }
 
-.sharkTrackerPage button, .polylingualPage button {
+.sharkTrackerPage button,
+.polylingualPage button {
     width: 180px;
     height: 50px;
     font-size: 20px;
@@ -245,10 +246,21 @@ ul.topnav li a.logoText {
     margin: 10px;
 }
 
-.sharkTrackerPage button:hover, .polylingualPage button:hover {
+.sharkTrackerPage button:hover,
+.polylingualPage button:hover {
     background-color: rgba(221, 221, 221, 0.25);
     color: rgb(10, 196, 124);
     border: solid 2px rgb(10, 196, 124);
+}
+
+.floatRight {
+    float: right !important;
+}
+
+.projectHeader {
+    width:100%;
+    margin-top:70px;
+    max-height:500px;
 }
 
 /*---------------------------------------------*/

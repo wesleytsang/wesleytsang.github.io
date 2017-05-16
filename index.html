@@ -1,56 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--  Web Created by: Wesley
+          Please check the link for further information:
+          https://uk.linkedin.com/in/wesleytsang
+    -->
 <head>
-  
-<!--  Web Designed by: Wesley
-      
-      Please check the link for further information:
-      https://uk.linkedin.com/in/wesleytsang
 
-      Note that this website is not going to support screen size smaller than iphone5. 
-      Please try on a computer or a phone that have larger screen.
-      Sorry for the inconvience.
-
-
-
-      
-
-
-
-
--->
-  
     <meta charset="UTF-8">
-  
-    <title>Wesley's Profile</title>
-  
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-  
-    <link rel="stylesheet" type="text/css" href="css/animate.css">
-  
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
-  
-<!--  import jquery-->
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  
-<!--  import chart.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
-  
-<!-- contact icon-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
-    
-<!-- screen check-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      
+    <title>Wesley's Profile</title>
+
+<!-- Screen check -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Font Family (Roboto, OpenSans) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&#124;Roboto" rel="stylesheet">
+
+<!-- Sytle-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" media="screen and (min-width: 500px)" href="css/medium-Styles.css">
+    <link rel="stylesheet" media="screen and (min-width: 1450px)" href="css/large-Styles.css">
+
+<!-- Import jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Import chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+
+<!-- Contact icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+
 </head>
 <body>
-  
+
+<!--  Navbar  -->
     <ul class="topnav" id="myTopnav">
-    <li class="active" style="font-family: 'Audiowide', cursive;"><a href="http://wesleytsang.github.io">Wesley's Profile</a></li>
+    <li class="active"><a class="logoText" href="http://wesleytsang.github.io">Wesley's Profile</a></li>
     <li><a href="#top" onclick="dropDown()">Top</a></li>
     <li><a href="#aboutme" onclick="dropDown()">About Me</a></li>
-    <li><a href="#edu" onclick="dropDown()">Education & Skills</a></li>
+    <li><a href="#edu" onclick="dropDown()">Education	&amp; Skills</a></li>
     <li><a href="#exp" onclick="dropDown()">Experience</a></li>
     <li><a href="#project" onclick="dropDown()">Project</a></li>
     <li><a href="#contact" onclick="dropDown()">Contact</a></li>
@@ -58,146 +46,141 @@
       <a href="javascript:void(0);" style="font-size:15px;" onclick="dropDown()">☰</a>
     </li>
     </ul>
-  
-    <div class="parallax">
-        <div class="firstContent" id="top">
-            <h1 class="fadeIn">.Developer/</h1>
-            <p class="fadeIn">Code for life.</p>
-            <br>
-            <br>
-            <div class="myface fadeIn"></div>
+
+    <div class="trailer" id="top">
+        <div class="layer">
+            <div class="content">
+                <h1>./Developer</h1>
+                <p>Code for life</p>
+                <button onclick="location.href='doc/MyResume.pdf'">Resume</button>
+            </div>
         </div>
     </div>
-      
-    <div class="aboutme" id="aboutme">
-          
-            <h1>About Me</h1>
-            <hr>    
-      
-            <p>Hello, I am Wesley! I was born in Hong Kong and now I am a 2nd year student in a 4 year Master of Computer Science at King's College London.</p>
-          
-            <p>Looking to secure a challenging software development internship role
 
-            <button class="button" onclick="location.href='doc/MyResume.pdf'">RESUME</button>
-            
+    <div class="mainContainer">
 
-    </div>
-  
-    <div class="edu" id="edu">
-      <div class ="education hide" id="education">
-      <h1>Education</h1>
-      <hr>
-        
-      <div class="school">
-        <p><strong>King’s College London </strong> (~Current)</p>
-        <p style="font-size: 20px;">Master’s Degree in Computer Science. Modules including: JAVA, C++, Computer Systems, AI, Database and Elementary Logic etc.</p>
-      </div>
-      
-      <div class="school">
-      <p><strong>St John’s College</strong> (~2015)</p>
-      <p style="font-size: 20px;">A-Levels in Mathematics (<strong>A*</strong>), Further Mathematics (<strong>A</strong>), Chinese (<strong>A</strong>)</p>
-      </div>
-      
-      </div>
-      
-      <div class="skills">
-    
-        <h1>Skills</h1>
-        
-        <hr>
-      
-        <p>Programming Lang: JAVA C++ Python</p>
-        <p>Web Design: HTML CSS JS</p>
-        <p>App: Andriod Ionic</p>
-        <p>Planning Lang: PDDL</p>
-        <p>Database: MySQL</p>
-        <p>Tools: Git Linux SublimeText Eclipse VisualStudio Bracket</p>
-        <p>Normal Lang: English Cantonese Mandrain Japanese</p> 
-      
-        <div class="chart">
-          <canvas id="myChart">
-          </canvas>
-        </div>
-        
-      </div>
 
-    
-    </div>
-  
-  
-    <div class="exp" id="exp">
-      <h1>Keep Calm And Gain Experience</h1>
-      <hr>
-      <div class="expBlock">
-        <h2>Jul-Aug 2014: CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED (INTERNSHIPS)</h2>
-        <p>Played a key role within a busy IT department, independently managing and resolving issues</p>
-      </div>
-      <div class="expBlock">
-        <h2>2013-2016: PERSONAL TUTOR – Hong Kong</h2>
-        <p>Delivering engaging lessons and varied support to secondary school students from year 8-11 in subject areas including: mathematics, physics, chemistry and biology</p>
-      </div>
-    </div>
-  
-  
-    <div class="project" id="project">
-      <h1>PORTFOLIO</h1>   
-      <hr>
-          <div class="projectBox fadeIn" onclick="location.href='sharkTrackerPage.html'">
-              <div class="sharkTracker"></div>
-              <div class="projectDetails">
-                  <h1>Shark Tracker</h1>
-                  <p>This is created with JAVA. Implement APIs provided by many different organisations and form a useful combination.</p>
-              </div>
 
-          </div>
-      
-          <div class="projectBox fadeIn" onclick="location.href='adddsPage.html'">
-              <div class="addds"></div>
-              <div class="projectDetails">
-                  <h1>ADDDS</h1>
-                  <p>Autonomous Drone Document Delivery System, a research project aims to create a Drone Delivery System for primary use inside companies using PDDL.</p>
-              </div>
+        <div class="container" id="project">
 
-          </div>
-      
-    </div>
+            <h2 class="icon-rocket titleIcon"></h2>
 
-  
-    <div class="contact" id="contact">
-    
-      <div class="message">
-      <h1>Contact me today</h1>
-      <hr>
-      <p>Please feel free to contact me even if you are just sending me a friendly hello.</p>
-      </div>
-      
-      <div class="iconbar"> 
-        <div class="myinfo">
-          <a target="_blank" href="https://www.facebook.com/tsangchunghin">
-          <i class="icon-social-facebook"></i>
-          </a>
+            <div class="card"  onclick="location.href='sharkTrackerPage.html'">
+                <div class="layer sharkTracker">
+                    <img src="images/project1.jpg" alt="Shark Tracker">
+                </div>
+                <h2>Shark Tracker</h2>
+            </div>
+
+            <div class="card" onclick="location.href='adddsPage.html'">
+                <div class="layer addds">
+                    <img src="images/project2.jpg" alt="ADDDS">
+                </div>
+                <h2>ADDDS</h2>
+            </div>
+
+            <div class="card" onclick="location.href='polylingualPage.html'">
+                <div class="layer polylingual">
+                    <img src="images/project3.jpg" alt="Polylingual">
+                </div>
+                <h2>Polylingual</h2>
+            </div>
+
         </div>
 
-        <div class="myinfo">
-          <a target="_blank" href="https://uk.linkedin.com/in/wesleytsang">
-          <i class="icon-social-linkedin"></i>
-          </a>
+        <div class="container" id="aboutme">
+
+            <h2 class="icon-user titleIcon"></h2>
+            <p>I born in Hong Kong and now I am a 2nd year student in a 4 year Master of Computer Science at King's College London.</p>
+            <p>Looking to secure a challenging software development internship role</p>
+
+            <h2>Skills</h2>
+            <p>Software Development: JAVA C++ Python Scala Prolog</p>
+            <p>Web Development: HTML CSS JS JQuery PHP</p>
+            <p>Mobile: Andriod Ionic</p>
+            <p>AI Planning: PDDL</p>
+            <p>Database: MySQL</p>
+            <p>Others: Git UNIX AgileManagement UnitTesting</p>
+            <p>Languages: English Cantonese Mandrain Japanese</p>
+
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+
         </div>
 
-        <div class="myinfo">
-          <a target="_blank" href="mailto:tsangchunghin@hotmail.com?Subject=Hello%20again">
-          <i class="icon-envelope"></i>
-          </a>
+        <div class="container" id="edu">
+
+            <h2 class="icon-graduation titleIcon"></h2>
+
+            <div class="card" onclick="location.href='http://www.kcl.ac.uk/nms/depts/informatics/study/current/handbook/progs/ug/g404.aspx'">
+                <div class="layer kcl">
+                    <img src="images/kcl.jpg" alt="King's College London">
+                </div>
+                <h2>King's College London</h2>
+                <p style="font-size:16px;margin-bottom:0;">MSci Computer Science</p>
+                <p>2015-2019</p>
+            </div>
+
+            <div class="card" onclick="location.href='http://www.stjohnscollege.co.uk/'">
+                <div class="layer stjohns">
+                    <img src="images/stjohns.jpg" alt="St John's College">
+                </div>
+                <h2>St John's College</h2>
+                <p style="margin-bottom:0;">A-Levels</p>
+                <p style="font-size: 16px;margin:0;">Mathematics (A*), Further Mathematics (A), Chinese (A)</p>
+                <p>~2015</p>
+            </div>
+
         </div>
-        
-      </div>
-      
-      <div class="copyright">
-          <p>Powered by <a href="https://uk.linkedin.com/in/wesleytsang">Wesley</a> 2016</p>
-      </div>
-      
+
+        <div class="container" id="exp" style="margin-bottom:200px;">
+
+            <h2 class="icon-briefcase titleIcon"></h2>
+            <div>
+                <h3>Jul-Aug 2014: CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED (INTERNSHIPS)</h3>
+                <p>Played a key role within a busy IT department of a financial company in Hong Kong, independently managing and resolving issues.</p>
+            </div>
+
+            <div>
+                <h3>2013-2016: PERSONAL TUTOR – Hong Kong</h3>
+                <p>Delivering engaging lessons and varied support to secondary school students from year 8-11 in subject areas including: mathematics, physics, chemistry and biology</p>
+            </div>
+
+        </div>
+
+        <div class="container contact" id="contact">
+
+            <h2>Contact Me Today!</h2>
+            <p>Feel free to contact me even if you are just sending me a friendly hello.</p>
+
+            <div class="myinfo">
+                <a target="_blank" href="https://www.facebook.com/tsangchunghin">
+                <i class="icon-social-facebook"></i>
+                </a>
+            </div>
+
+            <div class="myinfo">
+              <a target="_blank" href="https://uk.linkedin.com/in/wesleytsang">
+              <i class="icon-social-linkedin"></i>
+              </a>
+            </div>
+
+            <div class="myinfo">
+              <a target="_blank" href="mailto:tsangchunghin@hotmail.com?Subject=Hello%20again">
+              <i class="icon-envelope"></i>
+              </a>
+            </div>
+
+            <div>
+                <p>Powered by <a href="https://uk.linkedin.com/in/wesleytsang">Wesley</a> 2016</p>
+            </div>
+
+        </div>
+
     </div>
 
     <script src="js/myScript.js"></script>
+
 </body>
 </html>

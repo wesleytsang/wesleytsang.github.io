@@ -20,6 +20,10 @@ body {
     padding-top: 30px;
 }
 
+.firstContainer {
+    margin-top: 50px;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -174,6 +178,15 @@ hr {
     border-radius: 5px;
 }
 
+.card description {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.noBottomMargin {
+    margin-bottom: 0;
+}
+
 .sharkTracker {background-color: rgb(134, 255, 227);}
 
 .addds {background-color: rgba(169,81,237,0.8);}
@@ -236,7 +249,8 @@ hr {
 
 /*-------------------ProjectPage----------------*/
 
-.sharkTrackerPage img {
+.sharkTrackerPage .screenshot {
+    max-width: 500px;
     width: 60%;
     display: block;
     margin: 20px auto;
@@ -269,6 +283,10 @@ hr {
     width:100%;
     margin-top:70px;
     max-height:500px;
+}
+
+.greyBackground {
+    background-color: rgba(159, 159, 159, 0.24);
 }
 
 /*---------------------------------------------*/

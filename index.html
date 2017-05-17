@@ -18,17 +18,18 @@
 
 <!-- Sytle-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" media="screen and (min-width: 500px)" href="css/medium-Styles.css">
-    <link rel="stylesheet" media="screen and (min-width: 1450px)" href="css/large-Styles.css">
 
+<!-- Contact icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    
 <!-- Import jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <!-- Import chart.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
 
-<!-- Contact icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+<!-- Import myScript.js -->
+    <script src="js/myScript.js" async></script>
 
 </head>
 <body>
@@ -44,7 +45,7 @@
     <li><a href="#exp" onclick="dropDown()">Experience</a></li>
     <li><a href="#contact" onclick="dropDown()">Contact</a></li>
     <li class="icon">
-      <a href="javascript:void(0);" style="font-size:15px;" onclick="dropDown()">☰</a>
+      <a href="javascript:void(0);" class="responsiveNav" onclick="dropDown()">☰</a>
     </li>
     </ul>
     </nav>
@@ -136,15 +137,15 @@
 
         </section>
 
-        <section class="container" id="exp" style="margin-bottom:200px;">
+        <section class="container extraMarginBot" id="exp">
 
             <h2 class="icon-briefcase titleIcon"></h2>
-            <div>
+            <div id="exp1">
                 <h3>Jul-Aug 2014: CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED (INTERNSHIPS)</h3>
                 <p>Played a key role within a busy IT department of a financial company in Hong Kong, independently managing and resolving issues.</p>
             </div>
 
-            <div>
+            <div id="exp2">
                 <h3>2013-2016: PERSONAL TUTOR – Hong Kong</h3>
                 <p>Delivering engaging lessons and varied support to secondary school students from year 8-11 in subject areas including: mathematics, physics, chemistry and biology</p>
             </div>
@@ -181,8 +182,6 @@
         </footer>
 
     </div>
-
-    <script src="js/myScript.js"></script>
 
 </body>
 </html>

@@ -249,6 +249,14 @@ hr {
 
 /*-------------------ProjectPage----------------*/
 
+.sharkTrackerPage {
+    margin-top: 30px;
+}
+
+.sharkTrackerPage ul {
+    list-style-type: none;
+}
+
 .sharkTrackerPage .screenshot {
     max-width: 500px;
     width: 60%;

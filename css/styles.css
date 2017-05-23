@@ -197,6 +197,8 @@ hr {
 
 .stjohns {background-color: rgba(55, 132, 255, 0.97)}
 
+.udacity {background-color: rgba(0, 230, 255, 0.75)}
+
 /*---------------------------------------------*/
 
 /*-------------------AboutMe-------------------*/
@@ -295,6 +297,10 @@ hr {
 
 .greyBackground {
     background-color: rgba(159, 159, 159, 0.24);
+}
+
+.polylingualVideo {
+    margin: 50px;
 }
 
 /*---------------------------------------------*/

@@ -266,6 +266,10 @@ hr {
     margin: 20px auto;
 }
 
+.sharkTrackerPage .card {
+    height: auto;
+}
+
 .sharkTrackerPage button,
 .polylingualPage button {
     width: 180px;
@@ -347,6 +351,10 @@ hr {
 
     .contact {
         margin-bottom: 200px;
+    }
+
+    .sharkTrackerPage .card {
+        height: 360px;
     }
 }
 

@@ -39,10 +39,10 @@
     <ul class="topnav" id="myTopnav">
     <li class="active"><a class="logoText" href="http://wesleytsang.github.io">Wesley's Profile</a></li>
     <li><a href="#top" onclick="dropDown()">Top</a></li>
-    <li><a href="#project" onclick="dropDown()">Project</a></li>
-    <li><a href="#aboutme" onclick="dropDown()">About Me</a></li>
-    <li><a href="#edu" onclick="dropDown()">Education</a></li>
     <li><a href="#exp" onclick="dropDown()">Experience</a></li>
+    <li><a href="#edu" onclick="dropDown()">Education</a></li>
+    <li><a href="#project" onclick="dropDown()">Project</a></li>
+    <li><a href="#skills" onclick="dropDown()">About Me</a></li>
     <li><a href="#contact" onclick="dropDown()">Contact</a></li>
     <li class="icon">
       <a href="javascript:void(0);" class="responsiveNav" onclick="dropDown()">☰</a>
@@ -61,6 +61,30 @@
     </header>
 
     <div class="mainContainer">
+
+        <section class="container" id="exp">
+
+            <h2 class="icon-briefcase titleIcon"></h2>
+
+            <div id="exp1">
+                <h3>Software Engineer Intern (Jun-Aug 2017)</h3>
+                <p>CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED</p>
+                <p>Played a key role in the Software development team, lead a group of 3 engineers in the design and development of JAVA-based software solutions. In charged of 4 different projects and saved the company more than USD$5000 in 2 months.</p>
+            </div>
+
+            <div id="exp2">
+                <h3>Private Tutor (Jul 2013 - Sep 2016)</h3>
+                <p>Freelance in Hong Kong</p>
+                <p>Delivering engaging lessons and varied support to secondary school students from year 8-11 in subject areas including: mathematics, physics, chemistry and biology</p>
+            </div>
+
+            <div id="exp3">
+                <h3>IT Assistant (Jul-Aug 2014)</h3>
+                <p>CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED</p>
+                <p>Played a key role within a busy IT department of a financial company in Hong Kong, independently managing and resolving issues.</p>
+            </div>
+
+        </section>
 
         <section class="container" id="project">
 
@@ -85,27 +109,6 @@
                     <img src="images/project3.jpg" alt="Polylingual">
                 </div>
                 <h2>Polylingual</h2>
-            </div>
-
-        </section>
-
-        <section class="container" id="aboutme">
-
-            <h2 class="icon-user titleIcon"></h2>
-            <p>I am a 3rd year student in a 4 year MSci Computer Science at King's College London and expecting to recieve a 1st hon.</p>
-
-            <h2>Skills</h2>
-            <p>Programming Languages: JAVA C++ Python Scala Prolog</p>
-            <p>Web Development: HTML5 CSS3 JS JQuery PHP AJAX</p>
-            <p>Framework: KnockoutJs NodeJs AngularJS BlackboneJs</p>
-            <p>AI Planning: PDDL Matlab TensorFlow Jupyter Conda ComputerVision</p>
-            <p>Database: MySQL MS-SQL PostgreSQL SQLite ORM</p>
-            <p>Mobile: Andriod Ionic</p>
-            <p>Others: Git UNIX LinuxServer AWSLightsail AgileManagement UnitTesting OAuth</p>
-            <p>Languages: English Cantonese Mandrain Japanese</p>
-
-            <div class="chart">
-                <canvas id="myChart"></canvas>
             </div>
 
         </section>
@@ -162,31 +165,21 @@
 
         </section>
 
-        <section class="container extraMarginBot" id="exp">
+        <section class="container" id="skills">
 
-            <h2 class="icon-briefcase titleIcon"></h2>
-
-            <div id="exp1">
-                <h3>Software Engineer Intern (Jun-Aug 2017)</h3>
-                <p>CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED</p>
-                <p>Played a key role in the Software development team, lead a group of 3 engineers in the design and development of JAVA-based software solutions. In charged of 4 different projects and saved the company more than USD$5000 in 2 months.</p>
-            </div>
-
-            <div id="exp2">
-                <h3>Private Tutor (Jul 2013 - Sep 2016)</h3>
-                <p>Freelance in Hong Kong</p>
-                <p>Delivering engaging lessons and varied support to secondary school students from year 8-11 in subject areas including: mathematics, physics, chemistry and biology</p>
-            </div>
-
-            <div id="exp3">
-                <h3>IT Assistant (Jul-Aug 2014)</h3>
-                <p>CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED</p>
-                <p>Played a key role within a busy IT department of a financial company in Hong Kong, independently managing and resolving issues.</p>
-            </div>
+            <h2 class="icon-user titleIcon extraMarginBot"></h2>
+            <p>Programming Languages: JAVA C++ Python Scala Prolog</p>
+            <p>Web Development: HTML5 CSS3 JS JQuery PHP AJAX</p>
+            <p>Framework: KnockoutJs NodeJs AngularJS BlackboneJs</p>
+            <p>AI Planning: PDDL Matlab TensorFlow Jupyter Conda ComputerVision</p>
+            <p>Database: MySQL MS-SQL PostgreSQL SQLite ORM</p>
+            <p>Mobile: Andriod Ionic</p>
+            <p>Others: Git UNIX LinuxServer AWSLightsail AgileManagement UnitTesting OAuth</p>
+            <p>Languages: English Cantonese Mandrain Japanese</p>
 
         </section>
 
-        <footer class="container contact" id="contact">
+        <footer class="container contact extraMarginTop" id="contact">
 
             <h2>Contact Me Today!</h2>
             <p>Feel free to contact me even if you are just sending me a friendly hello.</p>
@@ -209,7 +202,7 @@
               </a>
             </div>
 
-            <div>
+            <div class="extraPaddingBot">
                 <p>Powered by <a href="https://uk.linkedin.com/in/wesleytsang">Wesley</a> 2016</p>
             </div>
 

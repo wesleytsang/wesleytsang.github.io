@@ -243,8 +243,12 @@ hr {
     color: #585858;
 }
 
-.extraMarginBot {
-    margin-bottom: 200px !important;
+.extraMarginTop {
+    margin-top: 130px;
+}
+
+.extraPaddingBot {
+    padding-bottom: 40px;
 }
 
 /*---------------------------------------------*/

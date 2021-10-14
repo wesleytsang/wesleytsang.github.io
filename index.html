@@ -19,14 +19,13 @@
 <!-- Sytle-->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
+    <link rel="stylesheet" type="text/css" href="css/timeline.css">
+
 <!-- Contact icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
 
 <!-- Import jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-<!-- Import chart.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
 
 <!-- Import myScript.js -->
     <script src="js/myScript.js" async></script>
@@ -40,8 +39,8 @@
     <li class="active"><a class="logoText" href="http://wesleytsang.github.io">Wesley's Profile</a></li>
     <li><a href="#top" onclick="dropDown()">Top</a></li>
     <li><a href="#exp" onclick="dropDown()">Experience</a></li>
-    <li><a href="#edu" onclick="dropDown()">Education</a></li>
     <li><a href="#project" onclick="dropDown()">Project</a></li>
+    <li><a href="#edu" onclick="dropDown()">Education</a></li>
     <li><a href="#skills" onclick="dropDown()">About Me</a></li>
     <li><a href="#contact" onclick="dropDown()">Contact</a></li>
     <li class="icon">
@@ -64,31 +63,31 @@
 
         <section class="container" id="exp">
 
-            <h2 class="icon-briefcase titleIcon"></h2>
+            <h2 class="icon-briefcase titleIcon"> Work Experience</h2>
 
-            <div id="exp1">
-                <h3>Software Engineer Intern (Jun-Aug 2017)</h3>
-                <p>CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED</p>
+            <div class="exp-card" id="exp1">
+                <h3>Accenture</h3>
+                <p>Software Engineer Intern (Jun-Aug 2017)</p>
                 <p>Played a key role in the Software development team, lead a group of 3 engineers in the design and development of JAVA-based software solutions. In charged of 4 different projects and saved the company more than USD$5000 in 2 months.</p>
             </div>
 
-            <div id="exp2">
-                <h3>Private Tutor (Jul 2013 - Sep 2016)</h3>
-                <p>Freelance in Hong Kong</p>
-                <p>Delivering engaging lessons and varied support to secondary school students from year 8-11 in subject areas including: mathematics, physics, chemistry and biology</p>
+            <div class="exp-card" id="exp2">
+                <h3>OOCL</h3>
+                <p>Software Engineer Intern (Jun-Aug 2017)</p>
+                <p>Played a key role in the Software development team, lead a group of 3 engineers in the design and development of JAVA-based software solutions. In charged of 4 different projects and saved the company more than USD$5000 in 2 months.</p>
             </div>
 
-            <div id="exp3">
-                <h3>IT Assistant (Jul-Aug 2014)</h3>
-                <p>CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED</p>
-                <p>Played a key role within a busy IT department of a financial company in Hong Kong, independently managing and resolving issues.</p>
+            <div class="exp-card" id="exp3">
+                <h3>CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED</h3>
+                <p>Software Engineer Intern (Jun-Aug 2017)</p>
+                <p>Played a key role in the Software development team, lead a group of 3 engineers in the design and development of JAVA-based software solutions. In charged of 4 different projects and saved the company more than USD$5000 in 2 months.</p>
             </div>
 
         </section>
 
         <section class="container" id="project">
 
-            <h2 class="icon-rocket titleIcon"></h2>
+            <h2 class="icon-rocket titleIcon"> My Works</h2>
 
             <div class="card"  onclick="location.href='sharkTrackerPage.html'">
                 <div class="layer sharkTracker">
@@ -115,59 +114,63 @@
 
         <section class="container" id="edu">
 
-            <h2 class="icon-graduation titleIcon"></h2>
+            <h2 class="icon-graduation titleIcon"> Education</h2>
+            
+            <div class="cert">
 
-            <div class="card" onclick="location.href='http://www.kcl.ac.uk/nms/depts/informatics/study/current/handbook/progs/ug/g404.aspx'">
-                <div class="layer kcl">
-                    <img src="images/kcl.jpg" alt="King's College London">
-                </div>
-                <h2>King's College London</h2>
-                <p class="description">MSci Computer Science</p>
-                <p>2015-2019</p>
-            </div>
-
-            <div class="card" onclick="location.href='https://eu.udacity.com/course/computer-vision-nanodegree--nd891'">
-                <div class="layer udacity">
-                    <img src="images/udacity.png" alt="Udacity">
-                </div>
-                <h2>Udacity</h2>
-                <p class="description">Nanodegree</p>
-                <p class="description">Computer Vision</p>
-            </div>
-
-            <div class="card" onclick="location.href='https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101'">
-                <div class="layer udacity">
-                    <img src="images/udacity.png" alt="Udacity">
-                </div>
-                <h2>Udacity</h2>
-                <p class="description">Nanodegree</p>
-                <p class="description">Deep Learning</p>
-            </div>
-
-            <div class="card" onclick="location.href='https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004'">
-                <div class="layer udacity">
-                    <img src="images/udacity.png" alt="Udacity">
-                </div>
-                <h2>Udacity</h2>
-                <p class="description">Nanodegree</p>
-                <p class="description">Full Stack Web Developer</p>
-            </div>
-
-            <div class="card" onclick="location.href='http://www.stjohnscollege.co.uk/'">
-                <div class="layer stjohns">
-                    <img src="images/stjohns.jpg" alt="St John's College">
-                </div>
-                <h2>St John's College</h2>
-                <p class="noBottomMargin">A-Levels</p>
-                <p class="description">Mathematics (A*), Further Mathematics (A), Chinese (A)</p>
-                <p>~2015</p>
-            </div>
+            <table>
+                <tbody>
+                  <tr class="cert-record">
+                    <td><img src="images/kcl.jpg" alt="King's College London"></td>
+                    <td>King's College London</td>
+                    <td>MSci Computer Science</td>
+                    <td>1st Class Honor</td>
+                    <td>2015-2019</td>
+                  </tr>
+                  <tr class="cert-record">
+                    <td><img src="images/stjohns.png" alt="St John's College"></td>
+                    <td>St John's College, Southsea</td>
+                    <td>A-Levels</td>
+                    <td>Mathematics (A*), Further Mathematics (A), Chinese (A)</td>
+                    <td>2010-2015</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div><hr class="hr3"></div>
+            <table>
+              <tbody>
+                <tr class="cert-record">
+                    <td><img src="images/aws.png" alt="Udacity"></td>
+                    <td>Associate</td>
+                    <td>Solution Architect</td>
+                    <td>In Progress</td>
+                </tr>
+                <tr class="cert-record">
+                    <td><img src="images/udacity.jpg" alt="Udacity"></td>
+                    <td>Nanodegree</td>
+                    <td>Computer Vision</td>
+                    <td><button class="cert-button" onclick="location.href='https://eu.udacity.com/course/computer-vision-nanodegree--nd891'">Details</button></td>
+                </tr>
+                <tr class="cert-record">
+                    <td><img src="images/udacity.jpg" alt="Udacity"></td>
+                    <td>Nanodegree</td>
+                    <td>Deep Learning</td>
+                    <td><button class="cert-button" onclick="location.href='https://www.udacity.com/course/deep-learning-nanodegree-foundation--nd101'">Details</button></td>
+                </tr>
+                <tr class="cert-record">
+                    <td><img src="images/udacity.jpg" alt="Udacity"></td>
+                    <td>Nanodegree</td>
+                    <td>Full Stack Web Developer</td>
+                    <td><button class="cert-button" onclick="location.href='https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004'">Details</button></td>
+                </tr>
+              </tbody>
+            </table>
 
         </section>
-
+        
         <section class="container" id="skills">
 
-            <h2 class="icon-user titleIcon extraMarginBot"></h2>
+            <h2 class="icon-user titleIcon extraMarginBot"> Skills</h2>
             <p>Programming Languages: JAVA C++ Python Scala Prolog</p>
             <p>Web Development: HTML5 CSS3 JS JQuery PHP AJAX</p>
             <p>Framework: KnockoutJs NodeJs AngularJS BlackboneJs</p>
@@ -179,7 +182,7 @@
 
         </section>
 
-        <footer class="container contact extraMarginTop" id="contact">
+        <footer class="container contact" id="contact">
 
             <h2>Contact Me Today!</h2>
             <p>Feel free to contact me even if you are just sending me a friendly hello.</p>
@@ -202,7 +205,7 @@
               </a>
             </div>
 
-            <div class="extraPaddingBot">
+            <div>
                 <p>Powered by <a href="https://uk.linkedin.com/in/wesleytsang">Wesley</a> 2016</p>
             </div>
 

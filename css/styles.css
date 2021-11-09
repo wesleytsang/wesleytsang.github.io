@@ -154,7 +154,42 @@ p {
 /*-----------------Experience------------------*/
 
 .exp-card {
-  display: inline;
+  max-width: 800px;
+  padding: 7px;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  position:relative;
+  background:white;
+  -webkit-box-shadow: 0px 5px 15px -1px rgba(114, 114, 114, 0.52);
+  -moz-box-shadow: 0px 5px 15px -1px rgba(114, 114, 114, 0.52);
+  box-shadow: 0px 5px 15px -1px rgba(114, 114, 114, 0.52);
+  overflow: hidden;
+}
+
+.exp-card::before {
+  height:100%;
+  content:' ';
+  position: absolute;
+  top: 0;
+  width: 15px;
+  left: 0;
+}
+
+.exp-accenture::before {
+  background-color: purple;
+}
+
+.exp-oocl::before {
+  background-color: red;
+}
+
+.exp-admango::before {
+  background-color: orange;
+}
+
+.exp-chinagalaxy::before {
+  background-color: blue;
 }
 
 /*---------------------------------------------*/

@@ -66,27 +66,47 @@
             <h2 class="icon-briefcase titleIcon"> Work Experience</h2>
 
             <div class="exp-card exp-accenture" id="exp1">
-                <h3>Accenture</h3>
-                <p>Application Development Analysis </p>
-                <p>May 2021 - present</p>
+                <div class="exp-header">
+                    <img class="exp-img" src="images/accenture.png" alt="Accenture logo">
+                </div>
+                
+                <div class="exp-content">
+                    <h3>Accenture</h3>
+                    <p>Application Development Analysis</p>
+                    <p>May 2021 - present</p>
+                </div>                
             </div>
 
             <div class="exp-card exp-oocl" id="exp2">
-                <h3>OOCL</h3>
-                <p>Assistant Technical Analysis</p>
-                <p>Aug 2019 - Jan 2021</p>
+                <div class="exp-header">
+                    <img class="exp-img" src="images/oocl.svg" alt="OOCL logo">
+                </div>
+                <div class="exp-content">
+                    <h3>OOCL</h3>
+                    <p>Assistant Technical Analysis</p>
+                    <p>Aug 2019 - Jan 2021</p>
+                </div>
             </div>
 
             <div class="exp-card exp-admango" id="exp3">
-                <h3>AdmanGo</h3>
-                <p>Full-stack Developer Intern</p>
-                <p>Jun - Jul 2018</p>
+                <div class="exp-header">
+                    <img class="exp-img" src="images/admango.svg" alt="Admango logo">
+                </div>
+                <div class="exp-content"><h3>AdmanGo</h3>
+                    <p>Full-stack Developer Intern</p>
+                    <p>Jun - Jul 2018</p>
+                </div>
             </div>
 
             <div class="exp-card exp-chinagalaxy" id="exp4">
-                <h3>CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED</h3>
-                <p>Software Engineer Intern</p>
-                <p>Jun - Aug 2017</p>
+                <div class="exp-header">
+                    <img class="exp-img" src="images/china_galaxy.png" alt="China Galaxy logo">
+                </div>
+                <div class="exp-content">
+                    <h3>CHINA GALAXY FINANCIAL HOLDING COMPANY LIMITED</h3>
+                    <p>Software Engineer Intern</p>
+                    <p>Jun - Aug 2017</p>
+                </div>
             </div>
 
         </section>
@@ -95,18 +115,25 @@
 
             <h2 class="icon-rocket titleIcon"> My Works</h2>
 
-            <div class="card"  onclick="location.href='sharkTrackerPage.html'">
-                <div class="layer sharkTracker">
-                    <img src="images/project1.jpg" alt="Shark Tracker">
+            <div class="card" onclick="location.href='https://elegantparker.com/'">
+                <div class="layer startup1">
+                    <img src="images/elegant-parker.png" alt="elegantparker">
                 </div>
-                <h2>Shark Tracker</h2>
+                <h2>Startup Ideas: Elegant Parker</h2>
             </div>
 
-            <div class="card" onclick="location.href='adddsPage.html'">
-                <div class="layer addds">
-                    <img src="images/project2.jpg" alt="ADDDS">
+            <div class="card">
+                <div class="layer fy2">
+                    <img src="images/optimisation.png" alt="Resource Allocation">
                 </div>
-                <h2>ADDDS</h2>
+                <h2>Resource Allocation Applications using Computational Intelligence Methods</h2>
+            </div>
+
+            <div class="card">
+                <div class="layer fy1">
+                    <img src="images/endoscopy.jpg" alt="Imaging Diagnosis">
+                </div>
+                <h2>Computer-Aided Imaging Diagnosis</h2>
             </div>
 
             <div class="card" onclick="location.href='polylingualPage.html'">
@@ -114,6 +141,13 @@
                     <img src="images/project3.jpg" alt="Polylingual">
                 </div>
                 <h2>Polylingual</h2>
+            </div>
+
+            <div class="card"  onclick="location.href='sharkTrackerPage.html'">
+                <div class="layer sharkTracker">
+                    <img src="images/project1.jpg" alt="Shark Tracker">
+                </div>
+                <h2>Shark Tracker</h2>
             </div>
 
         </section>
@@ -177,14 +211,14 @@
         <section class="container" id="skills">
 
             <h2 class="icon-user titleIcon extraMarginBot"> Skills</h2>
-            <p>Programming Languages: JAVA C++ Python Scala Prolog</p>
-            <p>Web Development: HTML5 CSS3 JS JQuery PHP AJAX</p>
-            <p>Framework: KnockoutJs NodeJs AngularJS BlackboneJs</p>
-            <p>AI Planning: PDDL Matlab TensorFlow Jupyter Conda ComputerVision</p>
-            <p>Database: MySQL MS-SQL PostgreSQL SQLite ORM</p>
-            <p>Mobile: Andriod Ionic</p>
-            <p>Others: Git UNIX LinuxServer AWSLightsail AgileManagement UnitTesting OAuth</p>
-            <p>Languages: English Cantonese Mandrain Japanese</p>
+            <p>Programming Languages: JAVA, Python, GoLang, C++, Scala, Prolog</p>
+            <p>Back-end: SpringBoot, Kafka, Solace, OAuth2, SSO, Hibernate, JPA, JDBC, Flask</p>
+            <p>Front-end: HTML, CSS, JS, NodeJs, VueJs, ReactJs, JQuery</p>
+            <p>Database: MySQL, MongoDB, PL/SQL, Oracle SQL, MS-SQL, PostgreSQL, Redis, H2, Hadoop, ORM</p>
+            <p>Cloud: AWS, Google Cloud Platform (GCP), Azure, Pivotal Cloud Foundry (PCF)</p>
+            <p>AI: TensorFlow, Keras, PyTorch, Matlab, Computer Vision (Detection, Tracking, Recognition, Classification, YOLO), Deep Neural Network (CNN, RNN, GNN, GAN, etc.), Machine Learning, Optimisation</p>
+            <p>Others: Agile, Architecture Design, Unit Test, Integreation Test, Contract Test (PACT), Git, CICD, Jenkins, Docker, UNIX, Linux, </p>
+            <p>Languages: English, Cantonese, Mandrain, Japanese</p>
 
         </section>
 
@@ -213,6 +247,7 @@
 
             <div>
                 <p>Powered by <a href="https://uk.linkedin.com/in/wesleytsang">Wesley</a> 2016</p>
+                <p>Last updated: 06 Dec 2021</p>
             </div>
 
         </footer>

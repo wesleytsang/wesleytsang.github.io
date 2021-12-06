@@ -153,18 +153,43 @@ p {
 
 /*-----------------Experience------------------*/
 
+#exp {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
 .exp-card {
-  max-width: 800px;
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: center; */
+  align-items: center;
+  max-width: 1000px;
   padding: 7px;
   margin: auto;
   margin-bottom: 10px;
   border-radius: 15px;
-  position:relative;
+  position: relative;
   background:white;
   -webkit-box-shadow: 0px 5px 15px -1px rgba(114, 114, 114, 0.52);
   -moz-box-shadow: 0px 5px 15px -1px rgba(114, 114, 114, 0.52);
   box-shadow: 0px 5px 15px -1px rgba(114, 114, 114, 0.52);
   overflow: hidden;
+}
+
+.exp-header {
+  width: 180px;
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.exp-img {
+  margin: auto;
+  width: 100%;
+}
+
+.exp-content {
+  margin: auto;
 }
 
 .exp-card::before {
@@ -177,19 +202,19 @@ p {
 }
 
 .exp-accenture::before {
-  background-color: purple;
+  background-color: #CE93D8;
 }
 
 .exp-oocl::before {
-  background-color: red;
+  background-color: #EF9A9A;
 }
 
 .exp-admango::before {
-  background-color: orange;
+  background-color: #FFCC80;
 }
 
 .exp-chinagalaxy::before {
-  background-color: blue;
+  background-color: #90CAF9;
 }
 
 /*---------------------------------------------*/
@@ -215,6 +240,7 @@ p {
 .card img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   opacity: 0.3;
   border-radius: 5px;
 }
@@ -235,15 +261,19 @@ p {
 }
 
 .sharkTracker {
+  background-color: #80DEEA;
+}
+
+.fy1 {
+  background-color: #BBDEFB;
+}
+
+.fy2 {
   background-color: rgb(134, 255, 227);
 }
 
-.addds {
-  background-color: rgba(169, 81, 237, 0.8);
-}
-
 .polylingual {
-  background-color: rgba(81, 237, 159, 0.8);
+  background-color: #A5D6A7;
 }
 
 .kcl {
@@ -333,6 +363,17 @@ table td {
   }
 }
 
+.cert {
+  margin: auto;
+  width: 90%;
+  padding: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 5px 15px -1px rgb(114 114 114 / 52%);
+  -moz-box-shadow: 0px 5px 15px -1px rgba(114, 114, 114, 0.52);
+  box-shadow: 0px 5px 15px -1px rgb(114 114 114 / 52%);
+}
+
 .cert-record img {
   /* width: 100%; */
   width: 90px;
@@ -343,18 +384,18 @@ table td {
   width: 70px;
   height: 30px;
   /* color: white; */
-  background-color: transparent;
-  border: solid 3px rgb(157, 191, 255, 0.8);
-  border-radius: 4px;
-  color: rgb(157, 191, 255, 0.8);
+  background-color: #80D8FF;
+  border: solid 3px #80D8FF;
+  border-radius: 2px;
+  color: white;
   font-size: 15px;
   font-weight: 400;
 }
 
 .cert-button:hover {
-  background-color: rgba(157, 191, 255, 0.8);
-  color: white;
-  border: solid 2px white;
+  background-color: transparent;
+  color: #80D8FF;
+  /* border: solid 2px white; */
 }
 
 /*---------------------------------------------*/
@@ -466,9 +507,6 @@ table td {
     float: right;
     display: inline-block;
   }
-}
-
-@media screen and (max-width: 885px) {
   ul.topnav.responsive {
     position: fixed;
   }
@@ -485,6 +523,12 @@ table td {
     display: block;
     text-align: left;
   }
+  .exp-card {
+    justify-content: center;
+  }
+  .exp-content > h3 {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -496,9 +540,9 @@ table td {
     font-size: 4rem;
   }
 
-  .contact {
-    margin-bottom: 200px;
-  }
+  /* .contact {
+    padding-bottom: 200px;
+  } */
 
   .sharkTrackerPage .card {
     height: 360px;
@@ -514,7 +558,11 @@ table td {
 
   .contact {
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 0px;
+  }
+
+  .cert {
+    max-width: 90%;
   }
 }
 

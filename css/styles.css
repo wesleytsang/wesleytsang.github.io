@@ -570,6 +570,9 @@ table td {
   .cert-record {
     flex-direction: column;
   }
+  .cert {
+    padding: 0px;
+  }
 }
 
 @media screen and (min-width: 660px) {

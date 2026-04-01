@@ -186,6 +186,8 @@ p {
 .exp-img {
   margin: auto;
   width: 100%;
+  max-height: 120px;
+  object-fit: contain;
 }
 
 .exp-content {
@@ -215,6 +217,14 @@ p {
 
 .exp-chinagalaxy::before {
   background-color: #90CAF9;
+}
+
+.exp-morgan::before {
+  background-color: #577eff;
+}
+
+.exp-socgen::before {
+  background-color: #ff8080;
 }
 
 /*---------------------------------------------*/

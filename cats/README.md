@@ -5,7 +5,7 @@ A monorepo containing all components of the CATS platform:
 | Package | Description |
 |---------|-------------|
 | [`trading-engine`](./trading-engine) | Python service — exchange connectivity, signal collection, decision-making |
-| [`frontend`](./frontend) | AngularJS + AG Grid dashboard for monitoring and controlling trades |
+| [`frontend`](./frontend) | Angular 19 + AG Grid 33 dashboard for monitoring and controlling trades |
 
 ---
 
@@ -17,7 +17,7 @@ A monorepo containing all components of the CATS platform:
 │                                                            │
 │  ┌──────────────────────┐     ┌────────────────────────┐  │
 │  │   Trading Engine     │     │       Frontend          │  │
-│  │   (Python)           │◄────│   (AngularJS + AG Grid) │  │
+│  │   (Python)           │◄────│   (Angular 19 + AG Grid) │  │
 │  │                      │ WS/ │                         │  │
 │  │  • Exchange Connector│ REST│  • Trade Dashboard      │  │
 │  │  • Signal Collector  │     │  • Signal Monitor       │  │
@@ -119,7 +119,7 @@ cats/
 │   ├── config/
 │   ├── Dockerfile
 │   └── requirements.txt
-├── frontend/              # AngularJS + AG Grid dashboard
+├── frontend/              # Angular 19 + AG Grid 33 dashboard
 │   ├── src/
 │   │   ├── app/
 │   │   │   ├── components/ # Dashboard, Trades, Signals views

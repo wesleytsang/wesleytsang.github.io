@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="catsApp">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CATS — Crypto Automated Trading System</title>
+  <!-- AG Grid stylesheet -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-grid.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-theme-alpine.css"
+  />
+</head>
+<body>
+  <nav class="navbar">
+    <span class="navbar-brand">🐱 CATS</span>
+    <a href="#!/dashboard">Dashboard</a>
+    <a href="#!/trades">Trades</a>
+    <a href="#!/signals">Signals</a>
+  </nav>
+
+  <main class="container">
+    <div ng-view></div>
+  </main>
+</body>
+</html>

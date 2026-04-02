@@ -1,0 +1,39 @@
+<div class="dashboard">
+  <h1>Dashboard</h1>
+
+  <div ng-if="vm.loading" class="loading">Loading…</div>
+  <div ng-if="vm.error" class="error">{{ vm.error }}</div>
+
+  <div ng-if="!vm.loading && !vm.error" class="kpi-grid">
+    <div class="kpi-tile">
+      <span class="kpi-label">Open Trades</span>
+      <span class="kpi-value">{{ vm.openTradesCount }}</span>
+    </div>
+    <div class="kpi-tile">
+      <span class="kpi-label">Closed Trades</span>
+      <span class="kpi-value">{{ vm.closedTradesCount }}</span>
+    </div>
+    <div class="kpi-tile">
+      <span class="kpi-label">Symbols Monitored</span>
+      <span class="kpi-value">{{ vm.signals.length }}</span>
+    </div>
+  </div>
+
+  <h2>Latest Signals</h2>
+  <table ng-if="vm.signals.length">
+    <thead>
+      <tr>
+        <th>Symbol</th><th>RSI</th><th>MACD</th><th>Close</th><th>Updated</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="s in vm.signals">
+        <td>{{ s.symbol }}</td>
+        <td>{{ s.rsi | number:2 }}</td>
+        <td>{{ s.macd | number:4 }}</td>
+        <td>{{ s.close | number:2 }}</td>
+        <td>{{ s.timestamp }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,40 @@
+# Byte-compiled / optimised / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Environment variables
+.env
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Trading engine config (may contain secrets)
+trading-engine/config/config.yaml

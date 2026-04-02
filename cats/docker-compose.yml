@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  trading-engine:
+    build:
+      context: ./trading-engine
+      dockerfile: Dockerfile
+    container_name: cats-trading-engine
+    env_file: .env
+    ports:
+      - "${ENGINE_PORT:-8000}:8000"
+    volumes:
+      - ./trading-engine/config:/app/config:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: cats-frontend
+    env_file: .env
+    ports:
+      - "${FRONTEND_PORT:-4200}:80"
+    depends_on:
+      trading-engine:
+        condition: service_healthy
+    restart: unless-stopped

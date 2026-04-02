@@ -1,0 +1,1 @@
+"""CATS Trading Engine package."""
